@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "informal-settlement-segmentation"
+version = "1.0.0"
+description = "Machine learning and deep learning experiments for informal settlement segmentation using satellite imagery"
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "ipykernel",
+    "numpy",
+    "scikit-learn",
+    "rasterio",
+    "matplotlib",
+    "joblib",
+    "pandas",
+    "torch",
+    "torchvision",
+    "torchgeo",
+    "lightning",
+    "tensorboard",
+]
